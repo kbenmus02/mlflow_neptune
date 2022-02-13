@@ -1,0 +1,15 @@
+artifact_uri: file:///__w/mlflow_neptune/mlflow_neptune/mlruns/1/48a881539ee14f68a1ce34ac4b053270/artifacts
+end_time: 1644786060394
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 48a881539ee14f68a1ce34ac4b053270
+run_uuid: 48a881539ee14f68a1ce34ac4b053270
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1644786058420
+status: 3
+tags: []
+user_id: root

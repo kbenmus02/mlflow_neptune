@@ -28,8 +28,8 @@ jobs:
           neptune mlflow
           
           #python Pointure_GaussianNB.ipynb
-          jupyter nbconvert --to notebook --execute Pointure_GaussianNB.ipynb
-
+          jupyter nbconvert --to notebook --execute Pointure_GaussianNB_v2.ipynb
+          
           # Write your CML report
           echo "# Metriques:" > report.md
           cat metrics.txt >> report.md

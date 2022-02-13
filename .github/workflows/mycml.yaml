@@ -22,8 +22,8 @@ jobs:
           # Your ML workflow goes here
           pip install -r requirements.txt
 
-          export NEPTUNE_API_TOKEN = "$NEPTUNE_API_TOKEN"
-          export NEPTUNE_PROJECT= "$NEPTUNE_PROJECT" 
+          export NEPTUNE_API_TOKEN="$NEPTUNE_API_TOKEN"
+          export NEPTUNE_PROJECT="$NEPTUNE_PROJECT" 
           
           neptune mlflow
           

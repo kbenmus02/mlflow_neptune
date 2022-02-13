@@ -1,0 +1,10 @@
+in terminal 
+export NEPTUNE_API_TOKEN
+set NEPTUNE_API_TOKEN="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIzMTVjZWQwMy1hMDZkLTQ0NjYtYjMwOS04NTM0ZjBhMzkyM2YifQ=="
+
+
+pip install neptune-mlflow
+
+export NEPTUNE_PROJECT=USER_NAME/PROJECT_NAME
+
+neptune mlflow

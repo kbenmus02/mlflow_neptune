@@ -3,6 +3,6 @@ sklearn
 matplotlib
 seaborn
 numpy
-mlflow
+neptune-mlflow
 sklearn
 jupyter

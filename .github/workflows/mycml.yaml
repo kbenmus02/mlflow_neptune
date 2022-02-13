@@ -1,0 +1,51 @@
+name: examens_final_A57
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: cml_run
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: "$GITHUB_USERNAME"
+          GITHUB_EMAIL: "$GITHUB_EMAIL"
+          NEPTUNE_API_TOKEN: ${{ secrets.NEPTUNE_API_TOKEN }}
+          NEPTUNE_PROJECT: ${{secrets.NEPTUNE_PROJECT}}
+
+
+
+
+
+        run: |
+          # Your ML workflow goes here
+          pip install -r requirements.txt
+
+          export NEPTUNE_API_TOKEN = "$NEPTUNE_API_TOKEN"
+          export NEPTUNE_PROJECT= "$NEPTUNE_PROJECT" 
+          
+          
+          #python Pointure_GaussianNB.ipynb
+          jupyter nbconvert --to notebook --execute Pointure_GaussianNB.ipynb
+
+          # Write your CML report
+          echo "# Metriques:" > report.md
+          cat metrics.txt >> report.md
+
+          ls -lrt 
+          
+          
+
+          git config --local user.email "$GITHUB_EMAIL"
+          git config --local user.name "$GITHUB_USERNAME"
+          git add mlruns metrics.txt report.md
+        
+          echo $(date +%Z)
+          git commit --allow-empty -m "push at $(date +%d-%b-%H_%M)"
+          git tag -a "v1.0" -m "tag avec temoin.txt depuis gitactions"
+
+          git push --follow-tags
+
+
+      

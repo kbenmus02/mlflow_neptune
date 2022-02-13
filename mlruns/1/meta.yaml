@@ -1,4 +1,0 @@
-artifact_location: file:///E:/work_E/work_wsl/mlflow_neptune/mlruns/1
-experiment_id: '1'
-lifecycle_stage: active
-name: test_mlflow_neptune

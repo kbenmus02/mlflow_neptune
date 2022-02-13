@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/work_E/work_wsl/mlflow_neptune/mlruns/1/f375e5bfc3df4d0fab68c15385c0c606/artifacts
+end_time: 1644784901569
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: f375e5bfc3df4d0fab68c15385c0c606
+run_uuid: f375e5bfc3df4d0fab68c15385c0c606
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1644784899162
+status: 3
+tags: []
+user_id: root
